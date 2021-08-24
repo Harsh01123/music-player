@@ -96,6 +96,17 @@
         song_Playing ?  pauseSong() : playSong()
     }
 }
+document.body.onkeyup = function(e){
+    if(e.keyCode == 37){
+        prevSong()
+    }
+}
+document.body.onkeyup = function(e){
+    if(e.keyCode == 39){
+        nextSong()
+    }
+}
+
 </script>
 </body>
 </html>
